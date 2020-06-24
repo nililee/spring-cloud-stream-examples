@@ -1,0 +1,4 @@
+producer\examples\domain\ExamplePayload.class
+producer\examples\ProducerApplicationRunner.class
+producer\examples\ProducerApplication.class
+producer\examples\ExampleSource.class

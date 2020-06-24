@@ -1,0 +1,50 @@
+spring.cloud.stream:
+  kafka:
+    binder:
+      brokers: jsolubuntu:9092
+      consumerProperties:
+        auto.offset.reset: earliest#      consumerProperties:
+#      headers:
+#      requiredAcks: 1
+#      healthTimeout: 10
+#      minPartitionCount: 1
+#      producerProperties:
+#      replicationFactor: 1
+#      autoCreateTopics: true
+#      autoAddPartitions: true
+#      transaction:
+#        transactionIdPrefix: null
+#      headerMapperBeanName:
+#    default:
+#      consumer:
+#        autoRebalanceEnabled: true
+#        ackEachRecord: false
+#        autoCommitOffset: true
+#        autoCommitOnError:
+#        resetOffsets: false
+#        startOffset:
+#        enableDlq: false
+#        dlqPartitions:
+#        configuration:
+#        dlqName:
+#        dlqProducerProperties:
+#        standardHeaders:
+#        converterBeanName:
+#        idleEventInterval: 3000
+#        destinationIsPattern: false
+#        pollTimeout: 5
+#      producer:
+#        sync: false
+#        sendTimeoutExpression:
+#        batchTimeout: 0
+#        messageKeyExpression:
+#        headerPatterns: *
+#        configuration:
+#        useTopicHeader: false
+#        recordMetadataChannel:
+#        compression: none
+#        closeTimeout: 30
+  bindings:
+    sink-channel:
+      destination: topic-producer-example-source
+      group: cg-consumer-examples-basic

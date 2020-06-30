@@ -1,10 +1,13 @@
 package examples.domain;
 
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
+@NoArgsConstructor
+@JsonDeserialize(using = ExamplePayloadDeserializer.class)
 public class ExamplePayload {
 
 	private int seq;

@@ -24,6 +24,7 @@
 		<module>producer-examples-inbound-channel-adapter</module>
 		<module>producer-examples-custom-partitioning</module>
 		<module>consumer-examples-basic</module>
+		<module>consumer-examples-dlq</module>
 	</modules>
 
 	<properties>

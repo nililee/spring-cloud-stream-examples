@@ -1,0 +1,19 @@
+spring.cloud.stream:
+  kafka:
+    binder:
+      brokers: jsolubuntu:9092
+    bindings:
+      sink-channel:
+        consumer:
+          autoCommitOffset: false
+          enableDlq: true
+#          dlqName: topic-common-dlq
+          dlqPartitions: 1
+          autoRebalanceEnabled: true
+          configuration:
+            auto.offset.reset: earliest
+  bindings:
+    sink-channel:
+      destination: topic-producer-example-source
+      group: cg-consumer-examples-dlq
+      contentType: application/json

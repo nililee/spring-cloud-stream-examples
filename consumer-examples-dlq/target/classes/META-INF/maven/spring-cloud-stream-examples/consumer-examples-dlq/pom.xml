@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>spring-cloud-stream-examples</groupId>
+		<artifactId>spring-cloud-stream-examples</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>consumer-examples-dlq</artifactId>
+	
+	<name>Consumer Examples DLQ</name>
+	<description>특정 토픽에 10건의 메시지를 키와 함께 발행하는 단순 예제</description>
+	
+</project>
